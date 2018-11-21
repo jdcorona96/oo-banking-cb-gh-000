@@ -19,7 +19,7 @@ class Transfer
       @sender.deposit(-@amount)
       @status = "complete"
     else
-      @status = "denied"
+      @status = "rejected"
     end
   end
 
