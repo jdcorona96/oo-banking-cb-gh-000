@@ -17,7 +17,7 @@ class Transfer
     if @sender.valid?
       @receiver.deposit(@amount)
       @sender.deposit(-@amount)
-      @status = "executed"
+      @status = "complete"
     else
       @status = "denied"
     end
