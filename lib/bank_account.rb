@@ -7,7 +7,7 @@ class BankAccount
   end
 
   attr_reader :name
-  attr_accessor :balance, :balance
+  attr_accessor :status, :balance
 
   def deposit(amount)
     @balance += amount
