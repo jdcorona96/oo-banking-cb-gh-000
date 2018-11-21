@@ -18,5 +18,5 @@ class Transfer
       @receiver.deposit(@amount)
       @sender.deposit(-@amount)
     end
-
+  end
 end
