@@ -17,10 +17,13 @@ class Transfer
     if @sender.valid?
       @receiver.deposit(@amount)
       @sender.deposit(-@amount)
+      @status = "executed"
+    else
+      @status = "denied"
     end
   end
 
   def reverse_transfer
-      
+    
   end
 end
